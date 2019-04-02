@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Menu from './menu'
 
 const StyledHeader = styled.header`
   padding: 0 24px;
@@ -38,6 +39,7 @@ const Header = () => {
 	      <H2><Link href="http://cam-acuherbs.co.uk" title="Cambridge Acupuncture &amp; Herbs — Member of The Association of Traditional Chinese Medicine (UK)" rel="home">Cambridge Acupuncture &amp; Herbs</Link></H2>
 	      <p>Member of The Association of Traditional Chinese Medicine (UK)</p>
 	    </StyledHeader>
+      <Menu />
 			<HeaderImage>
 				<Img src="/images/cam-acuherbs-banner-1.png"></Img>
 			</HeaderImage>
