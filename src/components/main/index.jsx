@@ -1,0 +1,7 @@
+export { default as Acupuncture } from './acupuncture'
+export { default as AboutDocter } from './about-doctor'
+export { default as ChineseHerbs } from './chinese-herbs'
+export { default as Contact } from './contact'
+export { default as Cupping } from './cupping'
+export { default as Remedies } from './remedies'
+export { default as OpeningHours } from './opening-hours'

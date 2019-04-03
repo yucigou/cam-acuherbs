@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -18,9 +19,9 @@ const Menu = () => {
           <i className="fa fa-caret-down"></i>
         </button>
         <div className="dropdown-content">
-          <a href="#">Acupuncture</a>
+          <Link to="/acupuncture">Acupuncture</Link>
           <a href="#">Chinese Herbs</a>
-          <a href="#">Cupping</a>
+          <Link to="/cupping">Cupping</Link>
         </div>
       </div>
       <a href="#news">Testimonials</a>
