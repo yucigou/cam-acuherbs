@@ -13,13 +13,21 @@ function myFunction() {
 const Menu = () => {
   return (
     <div className="topnav" id="myTopnav">
-      <a href="#home" className="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" className="icon" onClick={myFunction}>
-        <i className="fa fa-bars"></i>
-      </a>
+      <div className="dropdown">
+        <button className="dropbtn">Remedies&nbsp;
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          <a href="#">Acupuncture</a>
+          <a href="#">Chinese Herbs</a>
+          <a href="#">Cupping</a>
+        </div>
+      </div>
+      <a href="#news">Testimonials</a>
+      <a href="#contact">Opening Hours</a>
+      <a href="#about" className="active">About Our Doctor</a>
+      <a href="#about">Contact Us</a>
+      <a href="javascript:void(0);" className="icon" onClick={myFunction}>&#9776;</a>
     </div>
   )
 }

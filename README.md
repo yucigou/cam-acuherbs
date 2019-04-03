@@ -68,5 +68,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ## menu
-
+* How TO - Responsive Top Navigation
 https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
+* How TO - Responsive Navbar with Dropdown
+https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
