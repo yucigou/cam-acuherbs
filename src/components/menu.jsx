@@ -24,7 +24,10 @@ class Menu extends React.Component {
       <div className={ this.state.topNavClass }>
         <div className="dropdown">
           <button className="dropbtn">Remedies&nbsp;
-            <i className="fa fa-caret-down"></i>
+            <i
+              className="fa fa-caret-down"
+              style={{color:(this.props.location.pathname === '/acupuncture' || this.props.location.pathname === '/chinese-herbs' || this.props.location.pathname === '/cupping') ? '#4CAF50' : ''}}
+            ></i>
           </button>
           <div className="dropdown-content">
             <Link
@@ -45,7 +48,13 @@ class Menu extends React.Component {
           </div>
         </div>
         <a href="#news">Testimonials</a>
-        <a href="#contact">Opening Hours</a>
+        <Link
+          to="/opening-hours"
+          onClick={this.menuToggler}
+          className = {this.props.location.pathname === '/opening-hours' ? 'active' : ''}
+        >
+          Opening Hours
+        </Link>
         <a href="#about">About Our Doctor</a>
         <a href="#about">Contact Us</a>
         <a href="javascript:void(0);" className="icon" onClick={this.menuToggler}>&#9776;</a>

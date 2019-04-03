@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/header'
 import Footer from './components/footer'
-import { Acupuncture, AboutDocter, ChineseHerbs, Contact, Cupping, OpeningHours, Remedies } from './components/main'
+import { Acupuncture, AboutDocter, ChineseHerbs, Contact, Cupping, OpeningHours } from './components/main'
 
 class App extends Component {
   render() {
@@ -18,7 +18,6 @@ class App extends Component {
           <Route path="/chinese-herbs" component={ChineseHerbs} />
           <Route path="/contact" component={Contact} />
           <Route path="/cupping" component={Cupping} />
-          <Route path="/remedies" component={Remedies} />
           <Route path="/opening-hours" component={OpeningHours} />
           <Footer/>
         </div>
