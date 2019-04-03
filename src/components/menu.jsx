@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, NavLink, withRouter } from "react-router-dom";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -30,31 +30,31 @@ class Menu extends React.Component {
             ></i>
           </button>
           <div className="dropdown-content">
-            <Link
+            <NavLink
               to="/acupuncture"
               onClick={this.menuToggler}
-              className = {this.props.location.pathname === '/acupuncture' ? 'active' : ''}
+              activeClassName="active"
             >
               Acupuncture
-            </Link>
+            </NavLink>
             <a href="#">Chinese Herbs</a>
-            <Link
+            <NavLink
               to="/cupping"
               onClick={this.menuToggler}
-              className = {this.props.location.pathname === '/cupping' ? 'active' : ''}
+              activeClassName="active"
             >
               Cupping
-            </Link>
+            </NavLink>
           </div>
         </div>
         <a href="#news">Testimonials</a>
-        <Link
+        <NavLink
           to="/opening-hours"
           onClick={this.menuToggler}
-          className = {this.props.location.pathname === '/opening-hours' ? 'active' : ''}
+          activeClassName="active"
         >
           Opening Hours
-        </Link>
+        </NavLink>
         <a href="#about">About Our Doctor</a>
         <a href="#about">Contact Us</a>
         <a href="javascript:void(0);" className="icon" onClick={this.menuToggler}>&#9776;</a>
