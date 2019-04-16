@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import MainSection from '../ui/atom/main-section'
 
 const Blockquote = styled.blockquote`
-	padding: 30px 30px 30px 90px;
+	padding: 5px 5px 5px 80px;
 	background: #fafafa;
 	border: 1px solid #eee;
 	position: relative;
@@ -12,7 +12,7 @@ const Blockquote = styled.blockquote`
 	&:after {
 		content: '”';
 		width: 90px;
-		font-family: 'Georgia', serif;
+		font-family: 'Neuton', serif;
 		font-size: 72px;
 		line-height: 72px;
 		font-weight: 700;

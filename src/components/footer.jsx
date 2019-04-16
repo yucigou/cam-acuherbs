@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	padding: 30px 0;
+	padding: 15px 0;
 `
 
 const Footer = () => {

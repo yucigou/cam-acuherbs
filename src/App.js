@@ -13,7 +13,7 @@ class App extends Component {
         <div className="App">
           <Header/>
           <Route exact path="/acupuncture" component={Acupuncture} />
-          <Route exact path="/" component={Acupuncture} />
+          <Route exact path="/" component={AboutDocter} />
           <Route path="/about-doctor" component={AboutDocter} />
           <Route path="/chinese-herbs" component={ChineseHerbs} />
           <Route path="/testimonials" component={Testimonials} />
