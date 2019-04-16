@@ -6,7 +6,7 @@ const Photo = styled.img`
   padding: 5px;
   border: 1px solid #ddd;
   width: 325px;
-  @media (min-width: 768px) {
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
     width: 752px;
   }
 `

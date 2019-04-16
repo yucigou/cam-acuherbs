@@ -18,7 +18,7 @@ const Link = styled.a`
 const Title = styled.div`
 	font-size: 1.4em;
   padding: 10px 0;
-  @media (min-width: 768px) {
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
     br {
       display: none;
     }
