@@ -17,7 +17,12 @@ const Link = styled.a`
 
 const Title = styled.div`
 	font-size: 1.4em;
-  padding: 10px 0
+  padding: 10px 0;
+  @media (min-width: 768px) {
+    br {
+      display: none;
+    }
+  }
 `
 
 const SubTitle = styled.div`
