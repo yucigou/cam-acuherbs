@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Photo = styled.img`
   padding: 5px;
   border: 1px solid #ddd;
-  width: 348px;
+  width: 325px;
   @media (min-width: 768px) {
     width: 752px;
   }
