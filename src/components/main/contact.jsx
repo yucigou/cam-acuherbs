@@ -3,7 +3,9 @@ import MainSection from '../ui/atom/main-section'
 import styled from 'styled-components'
 
 const Photo = styled.img`
-  width: 360px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  width: 348px;
   @media (min-width: 768px) {
     width: 752px;
   }
