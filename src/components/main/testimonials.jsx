@@ -1,16 +1,15 @@
 import React from 'react';
 import MainSection from '../ui/atom/main-section'
 
-const OpeningHours = () => {
+const Testimonials = () => {
 	return (
     <MainSection>
-      <h2>Opening Hours</h2>
-      <h3>Monday – Saturday: </h3>
-      <p>10:00 – 19:00</p>
-      <h3>Sunday: </h3>
-      <p>By appointment only</p>
+      <h2>Testimonials</h2>
+      <p>The Chinese herb and acupuncture helped me to alleviate my stress, relieving the desire to smoke. — Marcie Roche</p>
+      <p>Before I started receiving Chinese massage, I could barely move my head but now I have free movement. — William Yu</p>
+			<p>The pain in my back is so much better. — Barbara Parkin</p>
     </MainSection>
   )
 }
 
-export default OpeningHours
+export default Testimonials

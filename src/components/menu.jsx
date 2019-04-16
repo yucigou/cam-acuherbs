@@ -37,7 +37,13 @@ class Menu extends React.Component {
             >
               Acupuncture
             </NavLink>
-            <a href="#">Chinese Herbs</a>
+            <NavLink
+              to="/chinese-herbs"
+              onClick={this.menuToggler}
+              activeClassName="active"
+            >
+              Chinese Herbs
+            </NavLink>
             <NavLink
               to="/cupping"
               onClick={this.menuToggler}
@@ -47,7 +53,13 @@ class Menu extends React.Component {
             </NavLink>
           </div>
         </div>
-        <a href="#news">Testimonials</a>
+        <NavLink
+          to="/testimonials"
+          onClick={this.menuToggler}
+          activeClassName="active"
+        >
+          Testimonials
+        </NavLink>
         <NavLink
           to="/opening-hours"
           onClick={this.menuToggler}
@@ -55,8 +67,20 @@ class Menu extends React.Component {
         >
           Opening Hours
         </NavLink>
-        <a href="#about">About Our Doctor</a>
-        <a href="#about">Contact Us</a>
+        <NavLink
+          to="/about-doctor"
+          onClick={this.menuToggler}
+          activeClassName="active"
+        >
+          About Our Doctor
+        </NavLink>
+        <NavLink
+          to="/contact"
+          onClick={this.menuToggler}
+          activeClassName="active"
+        >
+          Contact Us
+        </NavLink>
         <a href="javascript:void(0);" className="icon" onClick={this.menuToggler}>&#9776;</a>
       </div>
     )
