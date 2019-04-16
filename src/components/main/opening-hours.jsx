@@ -9,10 +9,10 @@ const Hours = styled.p`
 const OpeningHours = () => {
 	return (
     <MainSection>
-      <h2>Opening Hours</h2>
-      <h3>Monday – Saturday: </h3>
+      <h1>Opening Hours</h1>
+      <h2>Monday – Saturday: </h2>
       <Hours>10:00 – 19:00</Hours>
-      <h3>Sunday: </h3>
+      <h2>Sunday: </h2>
       <Hours>By appointment only</Hours>
     </MainSection>
   )

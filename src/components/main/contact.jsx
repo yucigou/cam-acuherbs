@@ -29,7 +29,7 @@ const MapIFrame = styled.iframe`
 const Contact = () => {
 	return (
     <MainSection>
-      <h2>Contact Us</h2>
+      <h1>Contact Us</h1>
       <p>You are welcome to contact us through the telephone, or visit us on site.</p>
       <ul>
         <li>Telephone: 01223-412216</li>

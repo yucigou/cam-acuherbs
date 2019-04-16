@@ -41,7 +41,7 @@ const Header = () => {
 	return (
 		<React.Fragment>
 	    <StyledHeader>
-	      <Title><Link href="http://cam-acuherbs.co.uk" title="Cambridge Acupuncture &amp; Herbs — Member of The Association of Traditional Chinese Medicine (UK)" rel="home">Cambridge Acupuncture <br/>&amp; Herbs</Link></Title>
+	      <Title><Link href="/" title="Cambridge Acupuncture &amp; Herbs — Member of The Association of Traditional Chinese Medicine (UK)" rel="home">Cambridge Acupuncture <br/>&amp; Herbs</Link></Title>
 	      <SubTitle>Member of The Association of <br/>Traditional Chinese Medicine (UK)</SubTitle>
 	    </StyledHeader>
       <Menu />

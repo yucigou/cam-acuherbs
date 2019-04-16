@@ -31,7 +31,7 @@ const Blockquote = styled.blockquote`
 const Testimonials = () => {
 	return (
     <MainSection>
-      <h2>Testimonials</h2>
+      <h1>Testimonials</h1>
       <Blockquote><p>The Chinese herb and acupuncture helped me to alleviate my stress, relieving the desire to smoke. <p>— Marcie Roche</p></p></Blockquote>
       <Blockquote><p>Before I started receiving Chinese massage, I could barely move my head but now I have free movement. <p>— William Yu</p></p></Blockquote>
 			<Blockquote><p>The pain in my back is so much better. <p>— Barbara Parkin</p></p></Blockquote>

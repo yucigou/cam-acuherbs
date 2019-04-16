@@ -14,7 +14,7 @@ const TextWrapImg = styled.img`
 const AboutDocter = () => {
 	return (
     <MainSection>
-      <h2>About Our Doctor</h2>
+      <h1>About Our Doctor</h1>
       <p><strong>Dr Li ZHANG</strong></p>
       <TextWrapImg src="/images/Li-Zhang.jpg" alt="Li Zhang"></TextWrapImg>
       <p>Dr Li Zhang has 36 years of clinical experiences including 4 years at Leicester Chinese Acupuncture & Herbal Clinic (81 Granby Street).</p>
