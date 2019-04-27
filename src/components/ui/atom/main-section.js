@@ -7,6 +7,11 @@ const MainSection = styled.div`
   p, li {
     font-size: 1.2em;
   }
+
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
+    width: 50%;
+    float: left;
+  }
 `
 
 export default MainSection

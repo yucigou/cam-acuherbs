@@ -5,9 +5,9 @@ import styled from 'styled-components'
 const Photo = styled.img`
   padding: 5px;
   border: 1px solid #ddd;
-  width: 325px;
+  width: 96%;
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
-    width: 752px;
+    width: 100%;
   }
 `
 
@@ -16,6 +16,10 @@ const GoogleMap = styled.div`
   padding-bottom: 75%; // This is the aspect ratio
   height: 0;
   overflow: hidden;
+
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
+    display: none;
+  }
 `
 
 const MapIFrame = styled.iframe`
@@ -26,15 +30,21 @@ const MapIFrame = styled.iframe`
   height: 100% !important;
 `
 
+const ContactDetails = styled.ul`
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
+    display: none;
+  }
+`
+
 const Contact = () => {
 	return (
     <MainSection>
       <h1>Contact Us</h1>
       <p>You are welcome to contact us through the telephone, or visit us on site.</p>
-      <ul>
+      <ContactDetails>
         <li>Telephone: 01223-412216</li>
         <li>Address: 238 Mill Road, Cambridge, CB1 3NF</li>
-      </ul>
+      </ContactDetails>
       <Photo src="/images/2016-05-15.png"
         alt="238 Mill Road, Cambridge, CB1 3NF"
       >

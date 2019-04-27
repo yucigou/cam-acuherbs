@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components'
 import Menu from './menu'
 
+const HeaderWrapper = styled.div`
+  text-align: center;
+`
+
 const StyledHeader = styled.header`
   padding: 0 24px;
   margin: 0 5%;
@@ -40,11 +44,15 @@ const HeaderImage = styled.div`
 const Img = styled.img`
 	max-width: 100%;
 	height: auto;
+
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
+    width: 100%;
+  }
 `
 
 const Header = () => {
 	return (
-		<React.Fragment>
+		<HeaderWrapper>
 	    <StyledHeader>
 	      <Title><Link href="/" title="Cambridge Acupuncture &amp; Herbs — Member of The Association of Traditional Chinese Medicine (UK)" rel="home"><strong>Cambridge Acupuncture <br/>&amp; Herbs</strong></Link></Title>
 	      <SubTitle>Member of The Association of <br/>Traditional Chinese Medicine (UK)</SubTitle>
@@ -53,7 +61,7 @@ const Header = () => {
 			<HeaderImage>
 				<Img src="/images/cam-acuherbs-banner-1.png"></Img>
 			</HeaderImage>
-		</React.Fragment>
+		</HeaderWrapper>
   )
 }
 
