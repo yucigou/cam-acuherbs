@@ -47,6 +47,9 @@ const Img = styled.img`
 
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
     width: 100%;
+    margin-top: -2px;
+    position: relative;
+    z-index: -1;
   }
 `
 

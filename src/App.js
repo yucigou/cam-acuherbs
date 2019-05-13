@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import styled, { ThemeProvider } from 'styled-components'
-import logo from './logo.svg';
-import './App.css';
 import Header from './components/header'
 import Footer from './components/footer'
 import Side from './components/side'
@@ -11,6 +9,11 @@ import { Acupuncture, AboutDocter, ChineseHerbs, Contact, Cupping, Testimonials,
 const theme = {
   mobileBreakpoint: '768px'
 }
+
+const Body = styled.div`
+  max-width: 1366px;
+  margin: 0 auto;
+`
 
 const Main = styled.div`
   @media (min-width: ${() => theme.mobileBreakpoint}) {
@@ -27,7 +30,7 @@ class App extends Component {
     return (
       <Router>
         <ThemeProvider theme={theme}>
-          <div className="App">
+          <Body>
             <Header/>
             <Main>
               <Route exact path="/acupuncture" component={Acupuncture} />
@@ -41,7 +44,7 @@ class App extends Component {
               <Side/>
             </Main>
             <Footer/>
-          </div>
+          </Body>
         </ThemeProvider>
       </Router>
     );
