@@ -6,7 +6,7 @@ const SideSection = styled.div`
 
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
     display: block;
-    padding: 10px;
+    padding: 10px 10px 10px 50px;
     width: 33%;
     float: left;
   }

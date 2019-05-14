@@ -9,8 +9,16 @@ const MainSection = styled.div`
   }
 
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
-    width: 50%;
+    width: 38%;
     float: left;
+    margin-top: -50px;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid #ddd;
+    p, li {
+      font-size: 1.3em;
+    }
+    padding: 2% 7% 7.3% 7%;
   }
 `
 
