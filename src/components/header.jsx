@@ -51,9 +51,14 @@ const Img = styled.img`
 
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
     width: 100%;
-    margin-top: -2px;
+    margin-top: -35px;
     position: relative;
     z-index: -1;
+    transform: scale(1, 0.8);
+    -webkit-transform: scale(1, 0.8); /* Saf3.1+, Chrome */
+    -moz-transform: scale(1, 0.8); /* FF3.5+ */
+    -ms-transform: scale(1, 0.8); /* IE9 */
+    -o-transform: scale(1, 0.8); /* Opera 10.5+ */
   }
 `
 

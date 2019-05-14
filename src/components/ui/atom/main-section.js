@@ -11,7 +11,7 @@ const MainSection = styled.div`
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
     width: 38%;
     float: left;
-    margin-top: -50px;
+    margin-top: -70px;
     margin-left: 50px;
     background-color: white;
     border: 1px solid #ddd;

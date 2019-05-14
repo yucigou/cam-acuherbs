@@ -9,6 +9,7 @@ const SideSection = styled.div`
     padding: 10px 10px 10px 50px;
     width: 33%;
     float: left;
+    margin-top: -10px;
   }
 `
 

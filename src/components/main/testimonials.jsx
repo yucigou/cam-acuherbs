@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import MainSection from '../ui/atom/main-section'
 
 const Blockquote = styled.blockquote`
-	padding: 5px 5px 5px 80px;
+	padding: 5px 5px 5px 70px;
 	background: #fafafa;
 	border: 1px solid #eee;
 	position: relative;
@@ -28,14 +28,20 @@ const Blockquote = styled.blockquote`
 	}
 `
 
+const TestimonialsSection = styled(MainSection)`
+	@media (min-width: ${props => props.theme.mobileBreakpoint}) {
+		padding: 2% 5% 7.3% 5%;
+	}
+`
+
 const Testimonials = () => {
 	return (
-    <MainSection>
+    <TestimonialsSection>
       <h1>Testimonials</h1>
       <Blockquote><p>The Chinese herb and acupuncture helped me to alleviate my stress, relieving the desire to smoke.</p><p>— Marcie Roche</p></Blockquote>
       <Blockquote><p>Before I started receiving Chinese massage, I could barely move my head but now I have free movement.</p><p>— William Yu</p></Blockquote>
 			<Blockquote><p>The pain in my back is so much better.</p><p>— Barbara Parkin</p></Blockquote>
-    </MainSection>
+    </TestimonialsSection>
   )
 }
 
