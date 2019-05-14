@@ -20,9 +20,10 @@ const Link = styled.a`
 `
 
 const Title = styled.div`
-	font-size: 1.4em;
+	font-size: 1.5em;
   padding: 10px 0;
   @media (min-width: ${props => props.theme.mobileBreakpoint}) {
+    font-size: 1.7em;
     br {
       display: none;
     }
@@ -30,8 +31,11 @@ const Title = styled.div`
 `
 
 const SubTitle = styled.div`
-	font-size: 0.9em;
-  padding: 0 0 10px 0
+	font-size: 1em;
+  padding: 0 0 10px 0;
+  @media (min-width: ${props => props.theme.mobileBreakpoint}) {
+    padding: 0 0 20px 0;
+  }
 `
 
 const HeaderImage = styled.div`
