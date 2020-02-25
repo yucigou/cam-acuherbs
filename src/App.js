@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -41,14 +41,17 @@ class App extends Component {
           <Body>
             <Header />
             <Main>
-              <Route exact path="/acupuncture" component={Acupuncture} />
-              <Route exact path="/" component={AboutDocter} />
-              <Route path="/about-doctor" component={AboutDocter} />
-              <Route path="/chinese-herbs" component={ChineseHerbs} />
-              <Route path="/testimonials" component={Testimonials} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/cupping" component={Cupping} />
-              <Route path="/opening-hours" component={OpeningHours} />
+              <Switch>
+                <Route exact path="/acupuncture" component={Acupuncture} />
+                <Route exact path="/" component={AboutDocter} />
+                <Route path="/about-doctor" component={AboutDocter} />
+                <Route path="/chinese-herbs" component={ChineseHerbs} />
+                <Route path="/testimonials" component={Testimonials} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/cupping" component={Cupping} />
+                <Route path="/opening-hours" component={OpeningHours} />
+                <Route path="*" component={AboutDocter} />
+              </Switch>
               <Side />
             </Main>
             <Footer />
