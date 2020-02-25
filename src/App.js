@@ -1,29 +1,37 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
-import styled, { ThemeProvider } from 'styled-components'
-import Header from './components/header'
-import Footer from './components/footer'
-import Side from './components/side'
-import { Acupuncture, AboutDocter, ChineseHerbs, Contact, Cupping, Testimonials, OpeningHours } from './components/main'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import styled, { ThemeProvider } from 'styled-components';
+import Header from './components/header';
+import Footer from './components/footer';
+import Side from './components/side';
+import {
+  Acupuncture,
+  AboutDocter,
+  ChineseHerbs,
+  Contact,
+  Cupping,
+  Testimonials,
+  OpeningHours
+} from './components/main';
 
 const theme = {
   mobileBreakpoint: '768px'
-}
+};
 
 const Body = styled.div`
   max-width: 1366px;
   margin: 0 auto;
-`
+`;
 
 const Main = styled.div`
   @media (min-width: ${() => theme.mobileBreakpoint}) {
     &:after {
-      content: "";
+      content: '';
       clear: both;
       display: table;
     }
   }
-`
+`;
 
 class App extends Component {
   render() {
@@ -31,7 +39,7 @@ class App extends Component {
       <Router>
         <ThemeProvider theme={theme}>
           <Body>
-            <Header/>
+            <Header />
             <Main>
               <Route exact path="/acupuncture" component={Acupuncture} />
               <Route exact path="/" component={AboutDocter} />
@@ -41,9 +49,9 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/cupping" component={Cupping} />
               <Route path="/opening-hours" component={OpeningHours} />
-              <Side/>
+              <Side />
             </Main>
-            <Footer/>
+            <Footer />
           </Body>
         </ThemeProvider>
       </Router>
