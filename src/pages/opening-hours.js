@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Layout from '../components/layout';
-import { Contact } from '../components/main';
+import { OpeningHours } from '../components/main';
 
 class App extends Component {
   render() {
     return (
       <Layout>
-        <Contact />
+        <OpeningHours />
       </Layout>
     );
   }

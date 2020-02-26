@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -20,6 +20,7 @@ class Menu extends React.Component {
   };
 
   render() {
+    console.log('current path: ');
     return (
       <div className={this.state.topNavClass}>
         <div className="dropdown">
@@ -29,66 +30,62 @@ class Menu extends React.Component {
               className="fa fa-caret-down"
               style={{
                 color:
-                  this.props.location.pathname === '/acupuncture' ||
-                  this.props.location.pathname === '/chinese-herbs' ||
-                  this.props.location.pathname === '/cupping'
+                  (window && window.location.pathname === '/acupuncture') ||
+                  (window && window.location.pathname === '/chinese-herbs') ||
+                  (window && window.location.pathname === '/cupping')
                     ? '#4CAF50'
                     : ''
               }}
             ></i>
           </button>
           <div className="dropdown-content">
-            <NavLink
+            <Link
               to="/acupuncture"
               onClick={this.menuToggler}
               activeClassName="active"
             >
               Acupuncture
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               to="/chinese-herbs"
               onClick={this.menuToggler}
               activeClassName="active"
             >
               Chinese Herbs
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               to="/cupping"
               onClick={this.menuToggler}
               activeClassName="active"
             >
               Cupping
-            </NavLink>
+            </Link>
           </div>
         </div>
-        <NavLink
+        <Link
           to="/testimonials"
           onClick={this.menuToggler}
           activeClassName="active"
         >
           Testimonials
-        </NavLink>
-        <NavLink
+        </Link>
+        <Link
           to="/opening-hours"
           onClick={this.menuToggler}
           activeClassName="active"
         >
           Opening Hours
-        </NavLink>
-        <NavLink
+        </Link>
+        <Link
           to="/about-doctor"
           onClick={this.menuToggler}
           activeClassName="active"
         >
           About Our Doctor
-        </NavLink>
-        <NavLink
-          to="/contact"
-          onClick={this.menuToggler}
-          activeClassName="active"
-        >
+        </Link>
+        <Link to="/contact" onClick={this.menuToggler} activeClassName="active">
           Contact Us
-        </NavLink>
+        </Link>
         <a
           href="javascript:void(0);"
           className="icon"
@@ -101,4 +98,4 @@ class Menu extends React.Component {
   }
 }
 
-export default withRouter(Menu);
+export default Menu;
