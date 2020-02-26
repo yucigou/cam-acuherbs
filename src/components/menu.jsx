@@ -12,7 +12,10 @@ class Menu extends React.Component {
   }
 
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  menuToggler = () => {
+  menuToggler = e => {
+    if (e.target.pathname === '/menu') {
+      e.preventDefault();
+    }
     if (this.state.topNavClass === 'topnav') {
       this.setState({ topNavClass: 'topnav responsive' });
     } else {
@@ -86,11 +89,7 @@ class Menu extends React.Component {
         <Link to="/contact" onClick={this.menuToggler} activeClassName="active">
           Contact Us
         </Link>
-        <a
-          href="javascript:void(0);"
-          className="icon"
-          onClick={this.menuToggler}
-        >
+        <a href="/menu" className="icon" onClick={this.menuToggler}>
           &#9776;
         </a>
       </div>
