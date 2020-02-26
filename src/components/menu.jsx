@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink, withRouter } from "react-router-dom";
+import React from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -7,26 +7,34 @@ class Menu extends React.Component {
     this.state = {
       topNavClass: 'topnav',
       activeMenu: ''
-    }
+    };
   }
 
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
   menuToggler = () => {
-    if (this.state.topNavClass === "topnav") {
-      this.setState({topNavClass: "topnav responsive"})
+    if (this.state.topNavClass === 'topnav') {
+      this.setState({ topNavClass: 'topnav responsive' });
     } else {
-      this.setState({topNavClass: "topnav"})
+      this.setState({ topNavClass: 'topnav' });
     }
-  }
+  };
 
   render() {
     return (
-      <div className={ this.state.topNavClass }>
+      <div className={this.state.topNavClass}>
         <div className="dropdown">
-          <button className="dropbtn">Remedies&nbsp;
+          <button className="dropbtn">
+            Remedies&nbsp;
             <i
               className="fa fa-caret-down"
-              style={{color:(this.props.location.pathname === '/acupuncture' || this.props.location.pathname === '/chinese-herbs' || this.props.location.pathname === '/cupping') ? '#4CAF50' : ''}}
+              style={{
+                color:
+                  this.props.location.pathname === '/acupuncture' ||
+                  this.props.location.pathname === '/chinese-herbs' ||
+                  this.props.location.pathname === '/cupping'
+                    ? '#4CAF50'
+                    : ''
+              }}
             ></i>
           </button>
           <div className="dropdown-content">
@@ -81,10 +89,16 @@ class Menu extends React.Component {
         >
           Contact Us
         </NavLink>
-        <a href="javascript:void(0);" className="icon" onClick={this.menuToggler}>&#9776;</a>
+        <a
+          href="javascript:void(0);"
+          className="icon"
+          onClick={this.menuToggler}
+        >
+          &#9776;
+        </a>
       </div>
-    )
+    );
   }
 }
 
-export default withRouter(Menu)
+export default withRouter(Menu);
