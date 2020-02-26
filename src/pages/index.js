@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
+import '../index.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Side from '../components/side';
