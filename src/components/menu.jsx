@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { globalHistory } from '@reach/router';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -20,7 +21,6 @@ class Menu extends React.Component {
   };
 
   render() {
-    console.log('current path: ');
     return (
       <div className={this.state.topNavClass}>
         <div className="dropdown">
@@ -30,9 +30,9 @@ class Menu extends React.Component {
               className="fa fa-caret-down"
               style={{
                 color:
-                  (window && window.location.pathname === '/acupuncture') ||
-                  (window && window.location.pathname === '/chinese-herbs') ||
-                  (window && window.location.pathname === '/cupping')
+                  globalHistory.location.pathname === '/acupuncture' ||
+                  globalHistory.location.pathname === '/chinese-herbs' ||
+                  globalHistory.location.pathname === '/cupping'
                     ? '#4CAF50'
                     : ''
               }}
