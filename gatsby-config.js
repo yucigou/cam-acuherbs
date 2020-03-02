@@ -16,11 +16,33 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Cambridge Chinese Acupuncture & Herbs`,
-        short_name: `Cambridge Chinese Acupuncture & Herbs`,
+        short_name: `Cam-AcuHerbs`,
         start_url: `/`,
         background_color: `#FFFFFF`,
-        theme_color: `#FFFFFF`,
-        display: `standalone`
+        theme_color: `#000000`,
+        display: `standalone`,
+        icons: [
+          {
+            src: '/images/cropped-Acupuncture-1-620x340-2-32x32.jpg',
+            type: 'image/jpg',
+            sizes: '32x32'
+          },
+          {
+            src: '/images/cropped-Acupuncture-1-620x340-2-180x180.jpg',
+            type: 'image/jpg',
+            sizes: '180x180'
+          },
+          {
+            src: '/images/cropped-Acupuncture-1-620x340-2-192x192.jpg',
+            type: 'image/jpg',
+            sizes: '192x192'
+          },
+          {
+            src: '/images/cropped-Acupuncture-1-620x340-2-270x270.jpg',
+            type: 'image/jpg',
+            sizes: '270x270'
+          }
+        ]
       }
     },
     `gatsby-plugin-offline`
