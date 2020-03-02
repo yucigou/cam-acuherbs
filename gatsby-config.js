@@ -46,6 +46,11 @@ module.exports = {
             src: '/images/cropped-Acupuncture-1-620x340-2-270x270.png',
             type: 'image/png',
             sizes: '270x270'
+          },
+          {
+            src: '/images/cropped-Acupuncture-1-620x340-2-512x512.png',
+            type: 'image/png',
+            sizes: '512x512'
           }
         ]
       }
