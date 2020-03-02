@@ -23,23 +23,28 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: '/images/cropped-Acupuncture-1-620x340-2-32x32.jpg',
-            type: 'image/jpg',
+            src: '/images/cropped-Acupuncture-1-620x340-2-32x32.png',
+            type: 'image/png',
             sizes: '32x32'
           },
           {
-            src: '/images/cropped-Acupuncture-1-620x340-2-180x180.jpg',
-            type: 'image/jpg',
+            src: '/images/cropped-Acupuncture-1-620x340-2-144x144.png',
+            type: 'image/png',
+            sizes: '144x144'
+          },
+          {
+            src: '/images/cropped-Acupuncture-1-620x340-2-180x180.png',
+            type: 'image/png',
             sizes: '180x180'
           },
           {
-            src: '/images/cropped-Acupuncture-1-620x340-2-192x192.jpg',
-            type: 'image/jpg',
+            src: '/images/cropped-Acupuncture-1-620x340-2-192x192.png',
+            type: 'image/png',
             sizes: '192x192'
           },
           {
-            src: '/images/cropped-Acupuncture-1-620x340-2-270x270.jpg',
-            type: 'image/jpg',
+            src: '/images/cropped-Acupuncture-1-620x340-2-270x270.png',
+            type: 'image/png',
             sizes: '270x270'
           }
         ]

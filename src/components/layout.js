@@ -35,14 +35,14 @@ class Layout extends Component {
           <meta charSet="utf-8" />
           <link
             rel="shortcut icon"
-            href="images/cropped-Acupuncture-1-620x340-2-32x32.jpg"
+            href="images/cropped-Acupuncture-1-620x340-2-32x32.png"
             sizes="32x32"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Neuton|Playfair+Display"
             rel="stylesheet"
           />
-          <link rel="manifest" href="manifest.json" />
+          <link rel="manifest" href="/manifest.webmanifest" />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
