@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{x4aZ:function(t,e,n){"use strict";n.r(e);var r=n("q1tI"),o=n.n(r),p=n("Bl7J"),a=n("qA3S");var c=function(t){var e,n;function r(){return t.apply(this,arguments)||this}return n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,e.__proto__=n,r.prototype.render=function(){return o.a.createElement(p.a,null,o.a.createElement(a.f,null))},r}(r.Component);e.default=c}}]);
-//# sourceMappingURL=component---src-pages-opening-hours-js-fb27e4b6a21d6db44687.js.map
