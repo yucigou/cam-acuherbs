@@ -18,7 +18,7 @@ const AboutDocter = () => {
       <p>
         <strong>Dr Li ZHANG</strong>
       </p>
-      <TextWrapImg src="/images/Li-Zhang.jpg" alt="Li Zhang"></TextWrapImg>
+      <TextWrapImg src="/images/Li-Zhang.png" alt="Li Zhang"></TextWrapImg>
       <p>
         Dr Li ZHANG has 38 years of clinical experiences including 12 years here
         in Cambridge, and 4 years at Leicester Chinese Acupuncture & Herbal
