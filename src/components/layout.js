@@ -52,6 +52,13 @@ class Layout extends Component {
             name="description"
             content="Cambridge Chinese Acupuncture & Herbs is member of the Association of Traditional Chinese Medicine in the UK. Dr Li ZHANG has many years of clinical experiences both in China and the UK. You can contact us on +44(0)1223-412216, or visit us at 238 Mill Road, Cambridge, CB1 3NF, UK"
           />
+
+          {/* ios support */}
+          <link
+            rel="apple-touch-icon"
+            href="/images/cropped-Acupuncture-1-620x340-2-144x144.png"
+          />
+          <meta name="apple-mobile-web-app-status-bar" content="#000000"></meta>
         </Helmet>
         <Body>
           <Header />
